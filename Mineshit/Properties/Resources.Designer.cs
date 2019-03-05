@@ -190,6 +190,26 @@ namespace Mineshit.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon iconfinder_shield_error_299056 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_shield_error_299056", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon iconfinder_success_1646004 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_success_1646004", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Marin_Hoxha___Endless__NCS_Release_ {

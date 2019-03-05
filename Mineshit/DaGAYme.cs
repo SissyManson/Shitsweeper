@@ -318,8 +318,8 @@ namespace Mineshit
 
         void CreateButtons(int x, int y)
         {
-            for (int i = 1; i <= x; i++)
-                for (int j = 1; j <= y; j++)
+            for (int i = 0; i <= x; i++)
+                for (int j = 0; j <= y; j++)
                 {
                     btn[i, j] = new Button();
                     btn[i, j].SetBounds(i * buttonSize + start_x, j * buttonSize + start_y, distance_between, distance_between);
@@ -439,14 +439,14 @@ namespace Mineshit
         {
             bool result = true;
 
-            if (lblHeight.Text == "" || lblWidth.Text == "" || cbDifficulty.Text == "")
+            if (tbHeight.Text == "" || tbWidth.Text == "" || cbDifficulty.Text == "")
             {
                 Warnings(1);
                 result = false;
             }
-            else if (lblHeight.Text != "" && lblWidth.Text != "" && cbDifficulty.Text != "")
+            else if (tbHeight.Text != "" && tbWidth.Text != "" && cbDifficulty.Text != "")
             {
-                if (hasLetters(lblHeight.Text) || hasLetters(lblWidth.Text))
+                if (hasLetters(tbHeight.Text) || hasLetters(tbWidth.Text))
                 {
                     Warnings(2);
                     result = false;
@@ -496,10 +496,16 @@ namespace Mineshit
             }
         }
 
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetGAYme(width, height);
+            StartGAYme();
+        }
+
         void SettingDimensions()
         {
-            height = int.Parse(lblHeight.Text);
-            width = int.Parse(lblWidth.Text);
+            height = int.Parse(tbHeight.Text);
+            width = int.Parse(tbWidth.Text);
 
             if (height > 25)
                 height = 25;
@@ -513,8 +519,8 @@ namespace Mineshit
                 if (width < 5)
                 width = 5;
 
-            lblHeight.Text = height.ToString();
-            lblWidth.Text = width.ToString();
+            tbHeight.Text = height.ToString();
+            tbWidth.Text = width.ToString();
 
         }
 

@@ -265,14 +265,15 @@
             // 
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
             this.resetToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.resetToolStripMenuItem.Text = "Reset";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
             this.exitGameToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit Game";
             // 
             // optionsToolStripMenuItem
