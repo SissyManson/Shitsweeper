@@ -55,7 +55,6 @@ namespace Mineshit
             InitializeComponent();
         }
         
-       
         private void DaGAYme_Load(object sender, EventArgs e)
         {
             spBones.Play();
@@ -134,7 +133,7 @@ namespace Mineshit
         {
             gameover = true;
             DaMap();
-            MessageBox.Show("You lose!","Game Over :D");
+            MessageBox.Show("You lose!", "Game Over :D");
         }
 
         void WinGAYme()
@@ -142,7 +141,7 @@ namespace Mineshit
             gameover = true;
             DaMap();
             progressBar.Value = 0;
-            MessageBox.Show("You win! :O","Congrats!");
+            MessageBox.Show("You win! :O", "Congrats!");
         }
 
         void EmptySpaces(int x, int y)
@@ -153,6 +152,7 @@ namespace Mineshit
                 {
                     int cx = x + dx8[i];
                     int cy = y + dy8[i];
+
                     if (IsPointOnMap(cx, cy) == 1)
                         if (btn[cx, cy].Enabled == true && btn_prop[cx, cy] != -1 && !gameover)
                         {
@@ -194,7 +194,7 @@ namespace Mineshit
 
         int IsPointOnMap(int x,int y)
         {
-            if (x<1 || x > width || y < 1 || y > height)
+            if (x < 1 || x > width || y < 1 || y > height)
             {
                 return 0;
             }
@@ -214,8 +214,8 @@ namespace Mineshit
         void WinFlag()
         {
             bool win = true;
-            for (int i = 0; i <= width; i++)
-                for (int j = 0; j <= height; j++)
+            for (int i = 1; i <= width; i++)
+                for (int j = 1; j <= height; j++)
                     if (btn_prop[i, j] == -1)
                         win = false;
 
@@ -228,8 +228,8 @@ namespace Mineshit
         void WinClick()
         {
             bool win = true;
-            for (int i = 0; i <= width; i++)
-                for (int j = 0; j <= height; j++)
+            for (int i = 1; i <= width; i++)
+                for (int j = 1; j <= height; j++)
                     if (btn[i, j].Enabled == true && saved_btn_prop[i, j] != -1)
                         win = false;
 
@@ -254,6 +254,7 @@ namespace Mineshit
 
                 if (btn_prop[x,y] != -1 && !gameover)
                 {
+                    //kogato e 5 na 5 & easy problem s progressbar-a
                     progressBar.Value++;
                     lblScore.Text = "Score: " + progressBar.Value.ToString();
                     WinClick();
@@ -269,7 +270,7 @@ namespace Mineshit
             for (int i = 0; i < 8; i++)
             {
                 int cx = x + dx8[i];
-                int cy = x + dy8[i];
+                int cy = y + dy8[i];
 
                 if (IsPointOnMap(cx, cy) == 1 && btn_prop[cx, cy] == -1)
                     score++;
@@ -279,8 +280,8 @@ namespace Mineshit
 
         void MapNumbering(int x, int y)
         {
-            for (int i = 0; i <= x; i++)
-                for (int j = 0; j <= y; j++)
+            for (int i = 1; i <= x; i++)
+                for (int j = 1; j <= y; j++)
                     if (btn_prop[i,j] != -1)
                     {
                         btn_prop[i, j] = Mines(i, j);
@@ -398,8 +399,8 @@ namespace Mineshit
 
         void ResetGAYme(int x, int y)
         {
-            for (int i = 1; i <= x; i++)
-                for (int j = 1; j <= y; j++)
+            for (int i = 0; i <= x; i++)
+                for (int j = 0; j <= y; j++)
                 {
                     btn[i, j].Enabled = true;
                     btn[i, j].Text = "";
@@ -484,11 +485,11 @@ namespace Mineshit
                     StartGAYme();
                     firstPlay = false;
 
-                    lblWidth.Enabled = false;
-                    lblHeight.Enabled = false;
+                    tbWidth.Enabled = false;
+                    tbHeight.Enabled = false;
                 }
                 else
-                    if (!firstPlay)
+                if (!firstPlay)
                 {
                     ResetGAYme(width, height);
                     StartGAYme();
@@ -500,6 +501,16 @@ namespace Mineshit
         {
             ResetGAYme(width, height);
             StartGAYme();
+            tbHeight.Focus();
+        }
+
+        private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Gave up?", "Leaving...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (DialogResult.Yes == res)
+            {
+                Application.Exit();
+            }
         }
 
         void SettingDimensions()

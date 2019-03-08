@@ -82,6 +82,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.Color.BlueViolet;
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister.Enabled = false;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegister.Location = new System.Drawing.Point(148, 300);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

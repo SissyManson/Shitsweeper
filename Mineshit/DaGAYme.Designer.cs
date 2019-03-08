@@ -66,35 +66,38 @@
             this.muteMusicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.startNewGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbWidth
             // 
-            this.tbWidth.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbWidth.BackColor = System.Drawing.SystemColors.Control;
             this.tbWidth.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbWidth.Location = new System.Drawing.Point(439, 105);
+            this.tbWidth.Location = new System.Drawing.Point(439, 92);
             this.tbWidth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbWidth.Name = "tbWidth";
             this.tbWidth.Size = new System.Drawing.Size(89, 27);
             this.tbWidth.TabIndex = 3;
+            this.tbWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbHeight
             // 
-            this.tbHeight.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbHeight.BackColor = System.Drawing.SystemColors.Control;
             this.tbHeight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHeight.Location = new System.Drawing.Point(439, 57);
+            this.tbHeight.Location = new System.Drawing.Point(439, 44);
             this.tbHeight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHeight.Name = "tbHeight";
             this.tbHeight.Size = new System.Drawing.Size(89, 27);
             this.tbHeight.TabIndex = 2;
+            this.tbHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(247, 92);
+            this.label3.Location = new System.Drawing.Point(247, 79);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 28);
@@ -105,7 +108,7 @@
             // 
             this.tbMinutes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMinutes.Enabled = false;
-            this.tbMinutes.Location = new System.Drawing.Point(196, 93);
+            this.tbMinutes.Location = new System.Drawing.Point(196, 80);
             this.tbMinutes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbMinutes.Name = "tbMinutes";
             this.tbMinutes.Size = new System.Drawing.Size(41, 27);
@@ -116,10 +119,10 @@
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
             this.btnPlay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.Location = new System.Drawing.Point(714, 104);
+            this.btnPlay.Location = new System.Drawing.Point(738, 91);
             this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(330, 61);
+            this.btnPlay.Size = new System.Drawing.Size(277, 36);
             this.btnPlay.TabIndex = 42;
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = false;
@@ -132,7 +135,7 @@
             "Easy",
             "Medium",
             "Hard"});
-            this.cbDifficulty.Location = new System.Drawing.Point(858, 59);
+            this.cbDifficulty.Location = new System.Drawing.Point(849, 47);
             this.cbDifficulty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbDifficulty.Name = "cbDifficulty";
             this.cbDifficulty.Size = new System.Drawing.Size(166, 35);
@@ -142,7 +145,7 @@
             // 
             this.lblWidth.AutoSize = true;
             this.lblWidth.BackColor = System.Drawing.Color.Transparent;
-            this.lblWidth.Location = new System.Drawing.Point(358, 104);
+            this.lblWidth.Location = new System.Drawing.Point(358, 91);
             this.lblWidth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblWidth.Name = "lblWidth";
             this.lblWidth.Size = new System.Drawing.Size(71, 28);
@@ -154,7 +157,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(541, 108);
+            this.label2.Location = new System.Drawing.Point(541, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 22);
@@ -165,7 +168,7 @@
             // 
             this.lblDifficulty.AutoSize = true;
             this.lblDifficulty.BackColor = System.Drawing.Color.Transparent;
-            this.lblDifficulty.Location = new System.Drawing.Point(733, 59);
+            this.lblDifficulty.Location = new System.Drawing.Point(733, 46);
             this.lblDifficulty.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDifficulty.Name = "lblDifficulty";
             this.lblDifficulty.Size = new System.Drawing.Size(106, 28);
@@ -176,7 +179,7 @@
             // 
             this.lblHeight.AutoSize = true;
             this.lblHeight.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeight.Location = new System.Drawing.Point(355, 56);
+            this.lblHeight.Location = new System.Drawing.Point(355, 43);
             this.lblHeight.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(74, 28);
@@ -188,7 +191,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Fugaz One", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(537, 59);
+            this.label1.Location = new System.Drawing.Point(537, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 22);
@@ -199,7 +202,7 @@
             // 
             this.lblScore.AutoSize = true;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
-            this.lblScore.Location = new System.Drawing.Point(21, 56);
+            this.lblScore.Location = new System.Drawing.Point(21, 43);
             this.lblScore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(65, 28);
@@ -210,7 +213,7 @@
             // 
             this.lblFlags.AutoSize = true;
             this.lblFlags.BackColor = System.Drawing.Color.Transparent;
-            this.lblFlags.Location = new System.Drawing.Point(21, 104);
+            this.lblFlags.Location = new System.Drawing.Point(21, 91);
             this.lblFlags.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblFlags.Name = "lblFlags";
             this.lblFlags.Size = new System.Drawing.Size(61, 28);
@@ -221,7 +224,7 @@
             // 
             this.tbSeconds.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSeconds.Enabled = false;
-            this.tbSeconds.Location = new System.Drawing.Point(275, 93);
+            this.tbSeconds.Location = new System.Drawing.Point(275, 80);
             this.tbSeconds.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbSeconds.Name = "tbSeconds";
             this.tbSeconds.Size = new System.Drawing.Size(41, 27);
@@ -231,7 +234,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Location = new System.Drawing.Point(229, 60);
+            this.lblTime.Location = new System.Drawing.Point(229, 47);
             this.lblTime.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(59, 28);
@@ -255,6 +258,7 @@
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startNewGameToolStripMenuItem,
             this.resetToolStripMenuItem,
             this.exitGameToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
@@ -275,6 +279,7 @@
             this.exitGameToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
             this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit Game";
+            this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
@@ -413,6 +418,12 @@
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar.TabIndex = 0;
             // 
+            // startNewGameToolStripMenuItem
+            // 
+            this.startNewGameToolStripMenuItem.Name = "startNewGameToolStripMenuItem";
+            this.startNewGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.startNewGameToolStripMenuItem.Text = "Start New Game";
+            // 
             // DaGAYme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
@@ -498,6 +509,7 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startNewGameToolStripMenuItem;
     }
 }
 
