@@ -253,7 +253,7 @@ namespace Mineshit
 
                 if (btn_prop[x,y] != -1 && !gameover)
                 {
-                    //kogato e 5 na 5 & easy problem s progressbar-a
+                    //kogato e 5 na 5 & easy problem s progressbar-a, kogato nacelvam mn empty spaces, kat cqlo e dert za vsqka golemina :DD
                     progressBar.Value++;
                     lblScore.Text = "Score: " + progressBar.Value.ToString();
                     WinClick();
@@ -393,7 +393,6 @@ namespace Mineshit
 
             GenerateMap(width, height, mines);
             MapNumbering(width, height);
-
         }
 
         void ResetGAYme(int x, int y)
@@ -419,7 +418,6 @@ namespace Mineshit
                 case 2:
                     MessageBox.Show("Wrong Input !");
                     break;
-
             }
         }
 
@@ -501,7 +499,6 @@ namespace Mineshit
         {
                 ResetGAYme(width, height);
                 StartGAYme();
-                     
         }
 
         private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
@@ -516,9 +513,9 @@ namespace Mineshit
         private void startNewGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //ResetGAYme(width, height);
-            
 
             //da ama ne, v proces na rabota, moje i da ne stane :"D
+
             //tbHeight.Text = "";
             //tbWidth.Text = "";
             //tbHeight.Enabled = true;
