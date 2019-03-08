@@ -34,7 +34,6 @@ namespace Mineshit
 
         int mines;
         int FlagsValue = 10;
-        int gameDifficulty;
         int flags;
 
         //Butonchetata
@@ -123,7 +122,7 @@ namespace Mineshit
         private void DaGAYme_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult res = MessageBox.Show("Gave up?", "Leaving...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (DialogResult.Yes == res)
+            if (res == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -487,6 +486,7 @@ namespace Mineshit
 
                     tbWidth.Enabled = false;
                     tbHeight.Enabled = false;
+                    cbDifficulty.Enabled = false;
                 }
                 else
                 if (!firstPlay)
@@ -500,8 +500,7 @@ namespace Mineshit
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResetGAYme(width, height);
-            StartGAYme();
-            tbHeight.Focus();
+            StartGAYme();           
         }
 
         private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
@@ -511,6 +510,25 @@ namespace Mineshit
             {
                 Application.Exit();
             }
+        }
+
+        private void startNewGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //ResetGAYme(width, height);
+            
+
+            //da ama ne, v proces na rabota, moje i da ne stane :"D
+            //tbHeight.Text = "";
+            //tbWidth.Text = "";
+            //tbHeight.Enabled = true;
+            //tbWidth.Enabled = true;
+            //tbHeight.Focus();
+
+            //if(tbHeight.Text != "" && tbWidth.Text != "")
+            //{
+            //    ResetGAYme(width, height);
+            //}
+
         }
 
         void SettingDimensions()

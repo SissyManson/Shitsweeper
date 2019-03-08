@@ -140,7 +140,5 @@ namespace Mineshit
                 btnRegister.Enabled = false;
             }
         }
-
-       
     }
 }
