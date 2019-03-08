@@ -53,6 +53,8 @@ namespace Mineshit
             Usernames.Add(inputUsername);
             Passwords.Add(inputPassword);
             MessageBox.Show("You're done!");
+            tbPassword.Text = "";
+            tbUsername.Text = "";
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)

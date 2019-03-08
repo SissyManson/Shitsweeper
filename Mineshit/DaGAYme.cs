@@ -499,8 +499,9 @@ namespace Mineshit
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ResetGAYme(width, height);
-            StartGAYme();           
+                ResetGAYme(width, height);
+                StartGAYme();
+                     
         }
 
         private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
