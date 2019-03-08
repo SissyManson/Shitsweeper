@@ -126,6 +126,10 @@ namespace Mineshit
             {
                 Application.Exit();
             }
+            else
+            {
+                e.Cancel=true;
+            }
         }
 
         void GAYmeOver()
