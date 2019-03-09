@@ -75,7 +75,9 @@ namespace Mineshit
                 }
             }
             if (!isFound)
+            {
                 MessageBox.Show("Invalid Username or Password!");
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
