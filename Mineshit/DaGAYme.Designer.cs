@@ -47,7 +47,6 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.startNewGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -258,19 +257,11 @@
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.startNewGameToolStripMenuItem,
             this.resetToolStripMenuItem,
             this.exitGameToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             this.gameToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.gameToolStripMenuItem.Text = "Game";
-            // 
-            // startNewGameToolStripMenuItem
-            // 
-            this.startNewGameToolStripMenuItem.Name = "startNewGameToolStripMenuItem";
-            this.startNewGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.startNewGameToolStripMenuItem.Text = "Start New Game";
-            this.startNewGameToolStripMenuItem.Click += new System.EventHandler(this.startNewGameToolStripMenuItem_Click);
             // 
             // resetToolStripMenuItem
             // 
@@ -304,7 +295,7 @@
             this.option2ToolStripMenuItem,
             this.muteToolStripMenuItem});
             this.musicToolStripMenuItem.Name = "musicToolStripMenuItem";
-            this.musicToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.musicToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.musicToolStripMenuItem.Text = "Music";
             // 
             // option1ToolStripMenuItem
@@ -338,7 +329,7 @@
             this.blackToolStripMenuItem,
             this.defaultToolStripMenuItem});
             this.backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
-            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.backgroundToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.backgroundToolStripMenuItem.Text = "Background";
             // 
             // purpleToolStripMenuItem
@@ -510,7 +501,6 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem startNewGameToolStripMenuItem;
     }
 }
 

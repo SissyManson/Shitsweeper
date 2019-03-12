@@ -514,25 +514,6 @@ namespace Mineshit
             }
         }
 
-        private void startNewGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //ResetGAYme(width, height);
-
-            //da ama ne, v proces na rabota, moje i da ne stane :"D
-
-            //tbHeight.Text = "";
-            //tbWidth.Text = "";
-            //tbHeight.Enabled = true;
-            //tbWidth.Enabled = true;
-            //tbHeight.Focus();
-
-            //if(tbHeight.Text != "" && tbWidth.Text != "")
-            //{
-            //    ResetGAYme(width, height);
-            //}
-
-        }
-
         void SettingDimensions()
         {
             height = int.Parse(tbHeight.Text);
